@@ -1,0 +1,82 @@
+<div class="az-content">
+  <div class="container-fluid">
+    <app-components-sidebar></app-components-sidebar>
+    <div class="az-content-body pd-lg-l-40 d-flex flex-column">
+      <div class="az-content-breadcrumb">
+        <span>Home</span>
+        <span>Welfare</span>
+        <span>Locker</span>
+      </div>
+      <h2 class="az-content-title">Locker</h2>
+
+      <div class="card">
+        <div class="card-header">
+          Locker
+        </div>
+        <div class="card-body">
+          <div class="col-4 offset-4">
+            <div class="form-group">
+              <label for="exampleSelectGender">Room No.</label>
+              <select class="form-control" id="exampleSelectGender">
+                <option>R01</option>
+                <option>R02</option>
+              </select>
+            </div>
+          </div>
+      
+          <table class="table table-sm table-hover tx-13">
+            <thead>
+              <tr>
+                <th>Lock no</th>
+                <th>Sex</th>
+                <th>Emp no</th>
+                <th>Name</th>
+                <th>Dept</th>
+                <th>Entr date</th>
+                <th>Resign</th>
+                <th>Category</th>
+                <th>Return key</th>
+                <th>Upd date</th>
+                <th>Remark</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let package of packages">
+                <td class="text-right">{{ package.lock_no }}</td>
+                <td class="text-center">{{ package.sex }}</td>
+                <td class="text-center">{{ package.emp_no }}</td>
+                <td>{{ package.name }}</td>
+                <td class="text-center">{{ package.dept }}</td>
+                <td>{{ package.entr_date }}</td>
+                <td>{{ package.resign }}</td>
+                <td class="text-center">{{ package.category }}</td>
+                <td>{{ package.return_key }}</td>
+                <td>{{ package.upd_date }}</td>
+                <td>{{ package.remark }}</td>
+                <td><a (click)="open(content)">
+                  <i class="fas fa-ellipsis-v"></i>
+                </a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <ng-template #content let-modal>
+        <div class="modal-header">
+          <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+          <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            KANCHANA
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+        </div>
+      </ng-template>
+      
+    </div><!-- az-content-body -->
+  </div><!-- container -->
+</div><!-- az-content -->

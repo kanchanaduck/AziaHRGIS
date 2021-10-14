@@ -36,7 +36,6 @@
               "node_modules/raphael/raphael.min.js",
               "node_modules/morris.js/morris.min.js",
               "node_modules/datatables.net/js/jquery.dataTables.js"
-              // "node_modules/tinymce/tinymce.min.js"
             ]
           },
           "configurations": {

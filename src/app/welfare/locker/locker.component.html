@@ -1,7 +1,7 @@
 <div class="az-content">
   <div class="container-fluid">
     <!-- <app-components-sidebar></app-components-sidebar> -->
-    <div class="az-content-body pd-lg-l-40 d-flex flex-column">
+    <div class="az-content-body d-flex flex-column">
       <div class="az-content-breadcrumb">
         <span>Home</span>
         <span>Welfare</span>
@@ -17,15 +17,15 @@
           <div class="col-4 offset-4">
             <div class="form-group">
               <label for="exampleSelectGender">Room No.</label>
-              <select class="form-control" id="exampleSelectGender">
+              <select class="form-control form-control-sm" id="exampleSelectGender">
                 <option>R01</option>
                 <option>R02</option>
               </select>
             </div>
           </div>
       
-          <table class="table table-sm table-hover tx-13">
-            <thead>
+          <table datatable [dtOptions]="dtOptions" class="table table-sm table-hover tx-13">
+            <!-- <thead>
               <tr>
                 <th>Lock no</th>
                 <th>Sex</th>
@@ -41,23 +41,8 @@
               </tr>
             </thead>
             <tbody>
-              <tr *ngFor="let package of packages">
-                <td class="text-right">{{ package.lock_no }}</td>
-                <td class="text-center">{{ package.sex }}</td>
-                <td class="text-center">{{ package.emp_no }}</td>
-                <td>{{ package.name }}</td>
-                <td class="text-center">{{ package.dept }}</td>
-                <td>{{ package.entr_date }}</td>
-                <td>{{ package.resign }}</td>
-                <td class="text-center">{{ package.category }}</td>
-                <td>{{ package.return_key }}</td>
-                <td>{{ package.upd_date }}</td>
-                <td>{{ package.remark }}</td>
-                <td><a (click)="open(content)">
-                  <i class="fas fa-ellipsis-v"></i>
-                </a></td>
-              </tr>
-            </tbody>
+              
+            </tbody> -->
           </table>
         </div>
       </div>
@@ -101,9 +86,6 @@
         </div><!-- modal-dialog -->
       </div><!-- modal -->
 
-      <div class="tx-center pd-y-20 bg-gray-200">
-        <button class="btn btn-primary" data-toggle="modal" data-target="#modaldemo1">View Live Demo</button>
-      </div><!-- pd-y-30 -->
       
     </div><!-- az-content-body -->
   </div><!-- container -->

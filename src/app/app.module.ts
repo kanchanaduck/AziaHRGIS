@@ -11,6 +11,7 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ChartsModule } from 'ng2-charts';
+import { DataTablesModule } from 'angular-datatables';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ChartsModule } from 'ng2-charts';
     FormsModule,
     AppRoutingModule,
     NgbModule,
-    ChartsModule
+    ChartsModule,
+    DataTablesModule
   ],
   providers: [],
   bootstrap: [AppComponent],

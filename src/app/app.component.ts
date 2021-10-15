@@ -37,6 +37,8 @@ export class AppComponent implements OnInit {
     const navbarBackdrop = document.createElement('div');
     navbarBackdrop.classList.add('az-navbar-backdrop');
     document.querySelector('body').appendChild(navbarBackdrop);
+
+    
   }
 
 }

@@ -1,17 +1,17 @@
 <div class="az-sidebar">
   <div class="az-sidebar-header">
-    <a href="index.html" class="az-logo">az<span>i</span>a</a>
+    <a href="index.html" class="az-logo">HRGIS</a>
   </div><!-- az-sidebar-header -->
   <div class="az-sidebar-loggedin">
     <div class="az-img-user online"><img src="assets/images/img1.jpg" alt=""></div>
     <div class="media-body">
-      <h6>Aziana Pechon</h6>
-      <span>Premium Member</span>
+      <h6>Noppamas T.</h6>
+      <span>IT Administrator</span>
     </div><!-- media-body -->
   </div><!-- az-sidebar-loggedin -->
   <div class="az-sidebar-body">
     <ul class="nav">
-      <li class="nav-label">Main Menu</li>
+      <li class="nav-label mb-3">Main Menu</li>
       <!-- <li class="nav-item active show" [ngClass]="{ 'active': dashboard.isActive }">
         <a routerLink="/dashboard" routerLinkActive="active" #dashboard="routerLinkActive" class="nav-link">
           <i class="typcn typcn-clipboard"></i>Dashboard
@@ -24,7 +24,8 @@
           <div *ngIf="(menu.url == 'welfare')" class="badge badge-danger badge-pill">Active</div>
         </a>
       </li> -->
-      <a *ngFor="let menu of menus" routerLink="/welfare/welfare" class="nav-link tx-sm" [ngClass]="{'active': menu.url == 'welfare'}">
+      <!-- <a *ngFor="let menu of menus" routerLink="/welfare" class="nav-link tx-sm" ngClass="{'active': menu.url == 'welfare'}"> -->
+        <a *ngFor="let menu of menus" routerLink="/welfare"  class="nav-link">
         {{menu.menu_name}}
         <div *ngIf="(menu.url == 'welfare')" class="badge badge-danger badge-pill">Active</div>
       </a>

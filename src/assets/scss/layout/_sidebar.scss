@@ -55,9 +55,9 @@
     margin-bottom: 0;
   }
 
-  .az-content-body {
+  /* .az-content-body {
     padding: 0 20px 20px;
-  }
+  } */
 
   .az-footer { margin-top: auto; }
 }
@@ -283,4 +283,11 @@
 
     + .nav-sub-link { border-top: 1px dotted $gray-300; }
   }
+}
+
+.az-sidebar-body ul.nav a.nav-link.active{
+  color: $indigo;
+}
+.az-sidebar-body ul.nav a.nav-link:hover{
+  color: $indigo;
 }

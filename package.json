@@ -30,6 +30,7 @@
     "@ng-select/ng-select": "^4.0.0",
     "angular-datatables": "^9.0.1",
     "angular-morris-js": "^1.1.0",
+    "angular-xeditable": "^0.10.2",
     "angular2-tinymce": "^3.3.0",
     "angular2-wizard": "^0.4.0",
     "axios": "^0.22.0",

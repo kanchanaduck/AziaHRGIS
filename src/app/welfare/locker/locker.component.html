@@ -1,13 +1,13 @@
 <div class="az-content">
   <div class="container-fluid">
-    <app-components-sidebar></app-components-sidebar>
-    <div class="az-content-body pd-lg-l-40 d-flex flex-column">
+    <!-- <app-components-sidebar></app-components-sidebar> -->
+    <div class="az-content-body d-flex flex-column">
       <div class="az-content-breadcrumb">
         <span>Home</span>
         <span>Welfare</span>
         <span>Locker</span>
       </div>
-      <h2 class="az-content-title">Locker</h2>
+      <h4 class="az-content-title">Locker</h4>
 
       <div class="card">
         <div class="card-header">
@@ -17,15 +17,15 @@
           <div class="col-4 offset-4">
             <div class="form-group">
               <label for="exampleSelectGender">Room No.</label>
-              <select class="form-control" id="exampleSelectGender">
+              <select class="form-control form-control-sm" id="exampleSelectGender">
                 <option>R01</option>
                 <option>R02</option>
               </select>
             </div>
           </div>
       
-          <table class="table table-sm table-hover tx-13">
-            <thead>
+          <table datatable [dtOptions]="dtOptions" class="table table-sm table-hover tx-13">
+            <!-- <thead>
               <tr>
                 <th>Lock no</th>
                 <th>Sex</th>
@@ -41,23 +41,8 @@
               </tr>
             </thead>
             <tbody>
-              <tr *ngFor="let package of packages">
-                <td class="text-right">{{ package.lock_no }}</td>
-                <td class="text-center">{{ package.sex }}</td>
-                <td class="text-center">{{ package.emp_no }}</td>
-                <td>{{ package.name }}</td>
-                <td class="text-center">{{ package.dept }}</td>
-                <td>{{ package.entr_date }}</td>
-                <td>{{ package.resign }}</td>
-                <td class="text-center">{{ package.category }}</td>
-                <td>{{ package.return_key }}</td>
-                <td>{{ package.upd_date }}</td>
-                <td>{{ package.remark }}</td>
-                <td><a (click)="open(content)">
-                  <i class="fas fa-ellipsis-v"></i>
-                </a></td>
-              </tr>
-            </tbody>
+              
+            </tbody> -->
           </table>
         </div>
       </div>
@@ -76,6 +61,31 @@
           <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
         </div>
       </ng-template>
+
+
+
+      <!-- BASIC MODAL -->
+      <div id="modaldemo1" class="modal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal-content-demo">
+            <div class="modal-header">
+              <h6 class="modal-title">Message Preview</h6>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h6>Why We Use Electoral College, Not Popular Vote</h6>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-indigo">Save changes</button>
+              <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div><!-- modal-dialog -->
+      </div><!-- modal -->
+
       
     </div><!-- az-content-body -->
   </div><!-- container -->

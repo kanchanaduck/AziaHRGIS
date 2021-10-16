@@ -4,7 +4,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/welfare/welfare', pathMatch: 'full' },
+  { path: '', redirectTo: '/general-pages/profile', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'general-pages', loadChildren: () => import('./general-pages/general-pages.module').then(m => m.GeneralPagesModule) },
   { path: 'ui-elements', loadChildren: () => import('./ui-elements/ui-elements.module').then(m => m.UiElementsModule) },

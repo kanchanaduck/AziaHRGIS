@@ -7,7 +7,7 @@ import { LockerComponent } from './locker/locker.component';
 import { DataTablesModule } from 'angular-datatables';
 
 const routes: Routes = [
-  { path: 'welfare', component: WelfareComponent },
+  { path: '', component: WelfareComponent },
   { path: 'locker', component: LockerComponent }
 ]
 

@@ -26,7 +26,14 @@ export class HeaderComponent implements OnInit {
 
   toggleHeaderMenu(event) {
     event.preventDefault();
-    document.querySelector('body').classList.toggle('az-header-menu-show');
+    alert(event)
+    document.querySelector('body').classList.toggle('az-header-menu-hide');
+  }
+
+  toggleSidebar(event) {
+    event.preventDefault();
+    document.querySelector('body').classList.toggle('az-sidebar-hide');
+    // document.querySelector('.az-sidebar').classList.toggle('d-flex');
   }
 
 }

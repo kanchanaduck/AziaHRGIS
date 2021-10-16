@@ -1,66 +1,16 @@
 <div class="az-header">
-  <div class="container">
+  <div class="container-fluid">
     <div class="az-header-left">
-      <a routerLink="/" class="az-logo"><span></span> HRGIS</a>
-      <a href="#" id="azMenuShow" (click)="toggleHeaderMenu($event)" class="az-header-menu-icon d-lg-none"><span></span></a>
+      <a href="" id="azSidebarToggle" class="az-header-menu-icon" (click)="toggleSidebar($event)"><span></span></a>
     </div><!-- az-header-left -->
-    <div class="az-header-menu">
-      <div class="az-header-menu-header">
-        <a routerLink="/" class="az-logo"><span></span> HRGIS</a>
-        <a href="#" (click)="toggleHeaderMenu($event)" class="close">&times;</a>
-      </div><!-- az-header-menu-header -->
-      <ul class="nav">
-        <!-- <li class="nav-item" ngbDropdown [ngClass]="{ 'active': dashboard.isActive }">
-          <a routerLink="/dashboard" routerLinkActive="active" #dashboard="routerLinkActive" class="nav-link"><i class="typcn typcn-chart-area-outline"></i> Dashboard</a>
-        </li>
-        <li class="nav-item" ngbDropdown>
-          <a class="nav-link with-sub" id="pagesDropdown" ngbDropdownToggle><i class="typcn typcn-document"></i> Pages</a>
-          <nav class="az-menu-sub" ngbDropdownMenu aria-labelledby="pagesDropdown">
-            <a routerLink="/general-pages/signin" class="nav-link">Sign In</a>
-            <a routerLink="/general-pages/signup" class="nav-link">Sign Up</a>
-          </nav>
-        </li>
-        <li class="nav-item dropdown-mega" ngbDropdown [ngClass]="{'active':  buttons.isActive ||  dropdown.isActive || icons.isActive }">
-          <a class="nav-link with-sub" id="componentsDropdown" ngbDropdownToggle><i class="typcn typcn-book"></i> Components</a>
-          <div class="az-menu-sub az-menu-sub-mega" ngbDropdownMenu aria-labelledby="componentsDropdown">
-            <div class="container">
-              <div>
-                <nav class="nav">
-                  <span>UI Elements</span>
-                  <a *ngFor="let menu of menus" routerLink="/welfare/welfare" class="nav-link">{{ menu.menu_name }}</a>
-                  <a routerLink="/ui-elements/buttons" routerLinkActive="active" #buttons="routerLinkActive" class="nav-link">Buttons</a>
-                  <a routerLink="/ui-elements/dropdown" routerLinkActive="active" #dropdown="routerLinkActive" class="nav-link">Dropdown</a>
-                  <a routerLink="/ui-elements/icons" routerLinkActive="active" #icons="routerLinkActive" class="nav-link">Icons</a>
-                </nav>
-              </div>
-              <div>
-                <nav class="nav">
-                  <span>Forms</span>
-                  <a routerLink="/form/form-elements" routerLinkActive="active" #formElements="routerLinkActive" class="nav-link">Form Elements</a>
-                </nav>
-              </div>
-              <div>
-                <nav class="nav">
-                  <span>Charts</span>
-                  <a routerLink="/charts/chartjs" routerLinkActive="active" #chartjs="routerLinkActive" class="nav-link">ChartJS</a>
-                </nav>
-              </div>
-              <div>
-                <nav class="nav">
-                  <span>Tables</span>
-                  <a routerLink="/tables/basic-tables" routerLinkActive="active" #basicTables="routerLinkActive" class="nav-link">Basic Tables</a>
-                </nav>
-              </div>
-            </div><!-- container -->
-          <!-- </div>
-        </li> -->
-      </ul>
-    </div><!-- az-header-menu -->
+    <!-- <div class="az-header-center">
+      <input type="search" class="form-control" placeholder="Search for anything...">
+      <button class="btn"><i class="fas fa-search"></i></button>
+    </div> --><!-- az-header-center -->
     <div class="az-header-right">
-      <a routerLink="/" class="az-header-search-link"><i class="fas fa-search"></i></a>
-      <div class="az-header-message">
-        <a routerLink="/"><i class="typcn typcn-messages"></i></a>
-      </div><!-- az-header-message -->
+      <!-- <div class="az-header-message">
+        <a routerLink="/apps/chat"><i class="typcn typcn-messages"></i></a>
+      </div> --><!-- az-header-message -->
       <div class="dropdown az-header-notification" ngbDropdown>
         <a class="new" id="notificationsDropdown" ngbDropdownToggle><i class="typcn typcn-bell"></i></a>
         <div class="dropdown-menu" ngbDropdownMenu aria-labelledby="notificationsDropdown">
@@ -102,7 +52,6 @@
           <div class="dropdown-footer"><a href="">View All Notifications</a></div>
         </div><!-- dropdown-menu -->
       </div><!-- az-header-notification -->
-      <!-- <a class="az-header-notification">Noppamas T. <br> Administrator</a> -->
       <div class="dropdown az-profile-menu" ngbDropdown>
         <a class="az-img-user" id="profileDropdown" ngbDropdownToggle><img src="assets/images/img1.jpg" alt="user"></a>
         <div class="dropdown-menu" ngbDropdownMenu aria-labelledby="profileDropdown">
@@ -114,7 +63,7 @@
               <img src="assets/images/img1.jpg" alt="">
             </div><!-- az-img-user -->
             <h6>Noppamas T.</h6>
-            <span>Administrator</span>
+            <span>IT Administrator</span>
           </div><!-- az-header-profile -->
 
           <a routerLink="/general-pages/profile" class="dropdown-item"><i class="typcn typcn-user-outline"></i> My Profile</a>
@@ -127,3 +76,4 @@
     </div><!-- az-header-right -->
   </div><!-- container -->
 </div><!-- az-header -->
+                  
